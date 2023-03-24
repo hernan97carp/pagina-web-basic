@@ -1,0 +1,13 @@
+body {
+    background-color: #ccc;
+    background-image: url("img/patron3.jpg");
+}
+
+#caja{
+
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(76, 67, 160);
+    color: antiquewhite;
+
+}

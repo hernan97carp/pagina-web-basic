@@ -6,11 +6,13 @@ h1{
     font-family: 'Mansalva', cursive;
     font-style: normal;
     text-transform: uppercase;
+    color: mediumpurple;
 }
 h2{
     font-family: comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: oblique; 
-    font-style: italic;    
+    font-style: italic;  
+    color:olive  
 }  
 h3{ font-family: 'Times New Roman', Times, serif;}
 p{ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
