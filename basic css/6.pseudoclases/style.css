@@ -1,0 +1,79 @@
+*{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+ul li {
+
+  font-size: 30px;
+
+
+}
+
+ul li:first-child{
+color: purple;
+font-weight: bold;
+
+}
+ul li:nth-child(2){
+color: green;
+font-weight: bold;
+
+}
+ul li:last-child{
+color: brown;
+font-weight: bold;
+
+}
+
+
+#mi-enlace{
+
+   font-size: 20px;
+   color: darkorange;
+
+
+}
+/*cuando yo no he visitado el enlace*/
+#mi-enlace:link{
+   color: red;   
+
+}
+
+/*si yo he visitado el enlace*/
+
+#mi-enlace:visited{
+    color: pink;
+
+}
+
+/*paso por encima y cambia  el enlace*/
+#mi-enlace:hover{
+   color: grey;
+
+}
+/*cuando pulso el enlace cambia los estilos*/
+#mi-enlace:active{
+color: black;
+font-size: 35px;
+
+
+
+
+
+}
+
+input[type="text"]{
+    margin-top: 20px;
+    padding: 40px;
+   
+}
+
+
+/*cuando justo hacemos focus listos para escribir cambia*/
+input[type="text"]:focus{
+ border: 4px dashed red;
+}
+
