@@ -252,7 +252,6 @@ box-shadow: 0px 0px 3px gray inset;
 
 #aside, #frase{
   width: 200px;
-  clear: both;
   margin:30px;
   background-color: white;
   border:1px solid #ccc;
@@ -261,6 +260,7 @@ box-shadow: 0px 0px 3px gray inset;
 
 }
 #frase{
+    clear: both;
     width: 180px;
     padding:10px;
     font-size:14px;
@@ -335,3 +335,17 @@ border-bottom: 1px dashed #333333;
 
 }
 
+
+/*SECCIONES*/
+
+#sections{
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 20px;
+}
+
+#sections h1{
+    font-size:25px;
+    margin-bottom: 5px;
+}
