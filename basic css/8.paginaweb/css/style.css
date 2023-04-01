@@ -19,7 +19,6 @@
 
 
 
-
 /*estilos generales*/
 *{
    padding: 0px;
@@ -59,7 +58,7 @@ color:#9b2422 !important;
 
 }
 .orange{
-    color:#d69d2a
+    color:#d69d2a 
 }
 /*Formularios*/
 
@@ -270,7 +269,7 @@ box-shadow: 0px 0px 3px gray inset;
 
 }
 #frase{
-    clear: both;
+   
     width: 180px;
     padding:10px;
     font-size:14px;
@@ -397,4 +396,36 @@ overflow: hidden;
 
 #sections .sticker2{
     margin-left: 860px;
+}
+
+
+
+.clearfix{
+float:none;
+clear:both;
+
+}
+
+#history{
+float:right;
+margin-top: 20px;
+margin-right: 20px;
+
+
+}
+
+#footer{
+ float:right;
+ margin-top: 20px;
+ font-family: sans-serif, Arial;
+ margin-right: 20px;
+ width: 100%;
+ text-align: center;
+ margin-top: 40px;
+ background-color: #333333;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ color:white;
+ font-size: 14px;
+ box-shadow: 0px 0px 2px gray;
 }
