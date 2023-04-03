@@ -1,0 +1,69 @@
+
+
+classList devuelve todas las listas de las clases
+
+tagName  da el nombre del tag del elemento lo devuelve como string, pero con mayuscula
+
+
+template   pones el codigo html q necesito no se renderiza)?????nose
+
+
+innerText 
+
+text content
+ 
+innerHTML /remplaza lo que tiene como contenido ese nodo lo remplaza por contenido html
+
+closest si fuera de el se encuentra tal cosa...
+
+cloneNode 
+
+createElement 
+
+appendChild   agrega un hijo 
+
+insertBefore
+
+setAttribute  en el atributo  tal añade tal cosa ---- ejemplo----$linkDOM.setAttribute("href", "https://youtube.com/jonmircha");
+
+importNode    clona  lleva de segundo parametro un booleano---ejemplo---let $clone = document.importNode($template, true);
+
+
+createDocumentFragment crear un solo fragmento q valla almacenando dinamicamente la informacion
+
+
+// .insertAdjacent...
+//   .insertAdjacentElement(position, el) hace referncia  a un nodo del tipo elemento es decir una etiqueta html
+//   .insertAdjacentHTML(position, html) texto que tengas en formato html 
+//   .insertAdjacentText(position, text) texto
+// Posiciones:
+//   beforebegin(hermano anterior)
+//   afterbegin(primer hijo)
+//   beforeend(ultimo hijo)
+//   afterend(hermano siguiente)
+
+
+
+
+//insertar al dom
+prepend seria como hijo primero
+before  como hermano anterior
+append como ultimo hijo
+after como hermano posterior
+
+
+
+recorrer el dom
+children   los hijos de... ejemplo   .children.length
+
+
+
+
+
+
+
+
+
+
+
+

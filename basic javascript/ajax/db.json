@@ -1,0 +1,45 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "nombre": "pablo"
+    },
+    {
+      "id": 2,
+      "nombre": "rodrigo"
+    },
+    {
+      "id": 3,
+      "nombre": "lucas"
+    },
+    {
+      "id": 4,
+      "nombre": "ismael"
+    },
+    {
+      "id": 5,
+      "nombre": "gabriel"
+    },
+    {
+      "id": 6
+    }
+  ],
+  "redes": [
+    {
+      "id": 1,
+      "red": "instagram"
+    },
+    {
+      "id": 2,
+      "red": "instagram"
+    },
+    {
+      "id": 3,
+      "red": "facebook"
+    },
+    {
+      "id": 4,
+      "red": "twitter"
+    }
+  ]
+}
