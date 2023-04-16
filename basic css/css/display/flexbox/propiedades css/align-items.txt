@@ -1,0 +1,4 @@
+center:  al medio
+flex-start:coloca al inicio
+flex-end: al final
+stretch: estirar elementos osea quetome todo el espacio disponible ... este se usa con text-align para centrarlo en caso de q sea column

@@ -1,0 +1,16 @@
+
+img{
+ max-width: 100%
+}
+hack para q la imagen q este dentro de un div tenga la misma proporcion q el div q la contenga
+
+
+img{
+ max-width: 100%
+display:block
+} 
+con eso ocupa elimina el espacio entre la imagen y el siguente elemento hacia abajo
+
+
+background-image: url() 
+background: no-repeat        por default se repiten....con esto no

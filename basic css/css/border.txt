@@ -1,0 +1,17 @@
+border-color:
+       -style: solid
+       width:
+border:1 px solid green;
+
+border-top-style:solid  _______ linea hacia arriba
+
+
+
+
+border-radius: borde en todas las direcciones
+border-bottom-right-radius:  borde derecha
+               left          borde izquierda
+
+
+border-top-left-radius: borde esquina superior izquierda
+           right                                derecha

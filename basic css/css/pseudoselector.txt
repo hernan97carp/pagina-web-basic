@@ -1,0 +1,7 @@
+:hover es cuando te posicionas sobre un elemento 
+example
+.categoria a:hover{
+background-color: red;
+color: white;
+font-size: 20px cualquier cosa o esquinas
+}

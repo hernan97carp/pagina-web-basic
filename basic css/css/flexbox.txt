@@ -1,0 +1,46 @@
+alinear pero desde el padre
+osea de los hijos inmediatos
+afecta solo el primer nivel de hijos
+ejemplo un nav con a dentro
+div
+ 
+nav aplicarlo aqui no desde el div 
+
+a a/
+
+nav/
+
+div/
+
+
+display:flex   acceso a las propiedades de flexbox
+
+                  flex-direction:
+row izq a derecha
+row-reverse
+column  arriba a bajo
+column-reverse
+
+
+flex-direction es row
+justify-content se utilizara para alinear horizontalmente,centro izq o derecha
+
+
+flex-direction es column
+
+justify-content se utilizara para alinear 
+verticalmente,inicio centro o final
+
+
+
+flex direction es row
+align items se utilizara para alinear verticalmente,,centro inicio o final
+
+
+flex-direction es column
+
+align items se utilizara para alinear horizontalmente
+
+
+
+

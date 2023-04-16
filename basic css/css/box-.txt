@@ -1,0 +1,5 @@
+                   box-sizing:
+
+border-box; cambia la forma en que se representa la caja  se adapta al width height por mas q le pongas un padding no se va a deformar
+
+content-box; va a tomar el tamaño en base a su contenido y sumado al padding

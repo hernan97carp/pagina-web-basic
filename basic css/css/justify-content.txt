@@ -1,0 +1,16 @@
+center: al medio
+flex-start: elemento al inicio al lado izquierdo
+
+flex-end: elemento al final osea al lado derecho
+
+space-between: distrubuye en el contenedor dejando el mismo
+espacio entre cada elemento
+
+space-around: distrube desde la orilla y deja ese mismo espacio, para cada uno de los elementos
+
+space-evenly: es el mismo espacio de los elementos a lo largo del contenedor
+
+
+por default es row osea de izquierda a derecha
+
+si es column ya no serviria para alinear horizontalmente

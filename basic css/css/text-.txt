@@ -1,0 +1,13 @@
+                                     text-aling:
+center;
+rigth;
+left;
+ texto se puede centrar poner ala derecha o izquierda
+
+                                text-decoration:
+none; para los enlaces
+
+
+                                text-transform:
+ uppercase,lowercase,none 
+capitalize; para primer letra en mayuscula 

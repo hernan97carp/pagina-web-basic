@@ -1,0 +1,19 @@
+                           margin: 
+
+margen afuera del contenido!!!!!!!!!!!!!!!!!
+toma las distancias de la orilla del elemento hacia afuera
+20px 0px 20px 0px              como un reloj 12     3       6        9
+                                                                   top left bottom right
+o 20px 0px para q sea 20 top 0 bottom
+
+auto;
+
+                           padding: 
+margen adentro del contenido!!!!!!!!!!!!!!!! 
+
+
+separa el contenido que esta dentro 
+hacia las orillas
+toma la distancia de las orillas del elemento hacia el centro del contenido
+
+auto;

@@ -1,0 +1,27 @@
+el hijo inmediato se le debe aplicar css grid
+lo mismo q pasa en flexbox
+display: grid
+
+grid-template-columns: 200px 200px 200px 200px crea 4
+columnas cada una de 200px   | | | |
+grid-template-columns: repeat(4,200px)
+cuanto se va a repetir y q tamaño
+
+
+grid-template-rows: 100px 100px crea parte superior 4 columnas
+y en la parte inferior 4 columnas ___ ___ ___ ___
+gap: es separacion ej 20px 
+column-gap: de izquierda a derecha
+row-gap: separacion de arriba hacia abajo
+
+
+
+
+
+
+
+usar fr en vez de px!!
+1fr 1fr son fracciones
+una es una mitad y la otra es la otra mitad pensar como si fuera un pastel.... 3fr 1fr uno tiene mas porcion q el otro
+
+
