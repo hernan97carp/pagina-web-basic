@@ -1,109 +1,31 @@
 const express = require("express");
-const morgan = require("morgan")
-const path= require('path')
-
+const morgan = require("morgan");
+const path = require("path");
+require("ejs")
 const app = express();
+
+const usersRoutes = require("./routes/user")
+const homeRoutes = require("./routes/home")
+
 //settings
-app.set("case sentitive routing", true) //respeta camel case en rutas
-app.set("appName", "Express Course")
+app.set("case sentitive routing", true); //respeta camel case en rutas
+app.set("appName", "Express Course");
+app.set("view engine", "ejs")// aplicamos el motor de las vistas
+app.set("views", path.join(__dirname, "views"))
 //app.set("port", 3000)
+
+
 //middlewords
-app.use(express.json())
-app.use(morgan("dev"))
+app.use(express.json());
+app.use(morgan("dev"));
 
-//rutas
+app.use(homeRoutes)
+app.use(usersRoutes)
 
-app.post('/profile',(req, res)=>{
-  console.log(req.body)
-  res.send('profile page')
-})
+//routes
 
-
-
-app.get('/dashbord', (req, res)=>{
-  res.send('Dashboard page')
-})
-app.use((req, res, next)=>{
-  console.log(`Route: ${req.url} Metodo: ${req.method}`)
-  console.log('paso por aqui')
-  next()
-})
-//para entrar seria   /dashbord?login=hernan97carp@hotmail.com
-// app.use((req, res, next)=>{
-//   if(req.query.login === 'hernan@hotmail.com'){
-//     next()
-//   }else{
-//     res.send('no autorizado')
-//   }
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-app.all('/info', (req, res)=>{
-  res.send('server info')
-})
-
-app.get('/hello/:username',(req, res)=>{
-  console.log(typeof req.params.username)
-  res.send(`hello ${req.params.username}`)
-})
-
-//search?q=javascript%20books
-app.get('/search',(req, res)=>{
-if(req.query.q === 'javascript books'){
-  res.send('lista de libros javascript')
-}else{
-  res.send('pagina normal')
-}
-})
-
-app.get('/add/:x/:y',(req, res)=>{
-  console.log(req.params.x)
-  console.log(req.params.y)
-const {x, y} = req.params
-res.send(`result: ${parseInt(x) + parseInt(y)}`)
-
-  // const result= parseInt(req.params.x) + parseInt(req.params.y)
-  // res.send(`result: ${result}`)
-})
-
-
-// app.get("/users/:username/photo",(req, res)=>{
-//  if(req.params.username === "fazt"){
-//  return res.sendFile("./js.png", {
-//     root: __dirname
-//   })
-//  }
-//  res.send("el usuario no esta permitido")
-// })
-
-
-// app.get("/miarchivo", (req, res) => {
-//   res.sendFile("./js.png", {
-//     root: __dirname,
-//   });
-// });
-
-
-app.get("/name/:nombre/age/:age", (req, res)=>{
-  res.send(`El usuario ${req.params.nombre} tiene la edad de ${req.params.age}`)
-})
-
-//primero procesamos rutas y sino se encuentra lo q buscamos pasamos por la carpeta public
-//app.use(express.static("./public")) //solo la carpeta public es publica
-// app.use("/public",express.static("./public")) //prefijo accedemos alos archivos con public/index.html ejemplo...
-// app.use("/uploads",express.static("./uploads"))
-app.use("/public", express.static(path.join(__dirname, "public")))
-app.use("/uploads", express.static(path.join(__dirname, "uploads")))
+app.use("/public", express.static(path.join(__dirname, "public")));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.listen(3000);
 console.log(`server ${app.get("appName")}in port ${3000}`);
@@ -117,6 +39,33 @@ console.log(`server ${app.get("appName")}in port ${3000}`);
 
 
 
+//primero procesamos rutas y sino se encuentra lo q buscamos pasamos por la carpeta public
+//app.use(express.static("./public")) //solo la carpeta public es publica
+// app.use("/public",express.static("./public")) //prefijo accedemos alos archivos con public/index.html ejemplo...
+// app.use("/uploads",express.static("./uploads"))
+
+//search?q=javascript%20books
+
+// app.get("/users/:username/photo",(req, res)=>{
+//  if(req.params.username === "fazt"){
+//  return res.sendFile("./js.png", {
+//     root: __dirname
+//   })
+//  }
+//  res.send("el usuario no esta permitido")
+// })
+
+// app.get("/miarchivo", (req, res) => {
+//   res.sendFile("./js.png", {
+//     root: __dirname,
+//   });
+// });
+
+// app.use((req, res, next)=>{
+//   console.log(`Route: ${req.url} Metodo: ${req.method}`)
+//   console.log('paso por aqui')
+//   next()
+// })
 
 //ala antiguita
 
@@ -156,23 +105,9 @@ console.log(`server ${app.get("appName")}in port ${3000}`);
 
 // })
 
-
-
-
-
-
-
-
-
-
-
-
-
 // app.get("/", (req, res) => {
 //   res.send("hello");
 // });
-
-
 
 // app.get("/miarchivo", (req, res) => {
 //   res.sendFile("./js.png", {
@@ -217,13 +152,6 @@ console.log(`server ${app.get("appName")}in port ${3000}`);
 //         res.send('modificando')
 
 //         })
-
-
-
-
-
-
-
 
 //  clieente servidor
 
