@@ -21,21 +21,16 @@ server.post("/products", (req, res) => {
   res.send(newProduct);
 });
 
-
-
-server.put("/products", (req, res) => {
-let newData = req.body
-
-  productsFound = products.find((p) => p.id === +req.params.id); //parseInt(req.params.id)
+server.put("/products/:id", (req, res) => {
+const newData = req.body
+ const productsFound = products.find((p) => p.id === parseInt(req.params.id)); //parseInt(req.params.id)
   if (!productsFound)
     res.status(404).json({
-      error: "No se encontro el producto",
+      messager: "No se encontro el producto",
     });
- products = products.map(p=> p.id === parseInt(req.params.id)?{...p, ...newData}:p)
- 
- res.json({
-  error: "Producto actualizado"
- });
+ products= products.map(p=> p.id === parseInt(req.params.id)?{...p, ...newData}:p)
+
+res.json({message:"producto actualizado"})
 });
 
 
@@ -43,7 +38,7 @@ let newData = req.body
 
 
 server.delete("/products/:id", (req, res) => {
-    productsFound = products.find((p) => p.id === +req.params.id); //parseInt(req.params.id)
+   const productsFound = products.find((p) => p.id === +req.params.id); //parseInt(req.params.id)
     if (!productsFound)
       res.status(404).json({
         error: "No se encontro el producto",
@@ -59,7 +54,7 @@ server.delete("/products/:id", (req, res) => {
 
 server.get("/products/:id", (req, res) => {
   console.log(req.params.id);
-  productsFound = products.find((p) => p.id === +req.params.id); //parseInt(req.params.id)
+  const productsFound = products.find((p) => p.id === +req.params.id); //parseInt(req.params.id)
   if (!productsFound)
     res.status(404).json({
       error: "No se encontro el producto",
