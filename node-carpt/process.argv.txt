@@ -1,0 +1,14 @@
+proceso. argv es una propiedad que contiene una matriz de valores de línea de comandos 
+proporcionados cuando se inició el proceso actual. El primer elemento de la matriz es 
+la ruta absoluta al nodo, seguida de la ruta al archivo que se está ejecutando y, por último,
+ los argumentos de la línea de comandos proporcionados cuando se inició el proceso.
+
+
+La matriz "argv" contiene todo lo dado en la línea de comando. El primer elemento (argv[0]) 
+será la ruta al nodo en sí, y el segundo elemento (argv[1]) será la ruta a su código de secuencia
+ de comandos. Entonces, un segmento que comience en 2 descartará ambos 
+
+y devolverá todo lo demás que se escribió en la línea de comando.
+
+
+
