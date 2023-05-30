@@ -1,0 +1,5 @@
+¿Qué es un endpoint en una API REST?
+
+Un endpoint es una dirección de una API, o bien un backend que se encarga de dar respuesta a una petición, mientras que una REST, en una API, es una interfaz que sirve para la conexión de varios sistemas. Se basa en HTTP y sirve para obtener y enviar datos e información. En este caso, los datos se entregan siempre en uno de estos dos formatos: XML o JSON.
+
+Por tanto, un endpoint en una API REST es una dirección de una API que responde a una petición a través de una interfaz, enviando información, si procede, en formatos JSON o XML.

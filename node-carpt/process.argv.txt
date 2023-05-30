@@ -9,6 +9,9 @@ será la ruta al nodo en sí, y el segundo elemento (argv[1]) será la ruta a su
  de comandos. Entonces, un segmento que comience en 2 descartará ambos 
 
 y devolverá todo lo demás que se escribió en la línea de comando.
+[0]node
+[1]directorio
+[2]argumento al progroma
 
 
-
+argv[2] los argumentos de la línea de comandos proporcionados cuando se inició el proceso.

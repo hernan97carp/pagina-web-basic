@@ -1,0 +1,2 @@
+asincrono se ejecuta independientemente 
+sincrono se ejecuta en la misma linea 
