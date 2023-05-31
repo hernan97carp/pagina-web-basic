@@ -1,0 +1,33 @@
+Promesas
+
+objeto que representa el eventual resultado (o error) de una operacion
+se usa  en una operacion que no se sabe cuanto va a tardar
+una promesa es un objeto de javascript
+ese objeto se asocia auna callback function
+promesa siempre esta en pending
+pero el resultado es
+cumplida(fullfiled)
+rechazada(rejectd)
+
+
+funcion callback
+funcion que se pasa a otra funcion como argumento y luego se ejecuta dentro de la funcion externa
+                f
+f             h
+
+tienen el metodo then con el cual podemos decidir que oucrre cuando se completa la promesa (exito o error)
+
+
+.catch()
+metodo de promesa que solo se ejecuta si la promesa es rechazada
+.catch((error)=>{
+ console.log(error)
+})
+
+METHOD CHAINING  encadenamiento de metodos
+permitir usar then y catch en una cadena de metodos
+
+
+toda funcion con async retorna una promesa
+
+await espera q el proceso termine para q se resuelve la funcion

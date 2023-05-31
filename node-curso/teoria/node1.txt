@@ -1,0 +1,153 @@
+entorno de ejecucion de javascript orientado a eventos asincronos
+
+entorno(insfraestructura) en el cual se ejecuta un programa o aplicacion
+no es un lenguaje de programacion
+no es un framework
+it not a libreria(biblioteca)
+
+>node --version
+
+>node
+.help 
+trabajar con js en vivo 
+
+Modulo 
+funcionalidad organizada en uno o varios archivos javascript que puede ser reutilizada en una aplicacion
+
+
+modulos built-in
+herramientas que nos dan q
+http´
+https
+fs(file system)
+os(operating system)
+path
+
+
+modulo console 
+modulo built-in que implementa funcionalidades como la consola nav web
+
+metodos utilis
+console.log()
+.warn()
+error()  console.error(new Error("ocurrio un error"))
+assert()
+table()
+
+modulo process
+
+provee informacion sobre el proceso de node que se esta ejecutando
+
+console.log(process.env)
+env signfica en ambiente de trabajo
+argv es argumento
+
+process.argv
+[node, app.js, 6, 7] es como un arreglo 
+ 0         1         2  3    indices
+for(let i = 2; i < process.argv.length; i++){
+       console.log(process.argv[i]) }
+ 
+process.memoryUsage()   me moria que usa
+
+
+MODULE OS
+
+operating system
+
+contiene funcionalidad para obtener informacion sobre el sistema operativo en el cual se ejecuta la aplicacion
+
+const os = rerquire('os')
+os.type() tipo de sistema operativo
+os.homedir() el directorio principal del sistema operativo
+os.uptime() cuanto tiempo estuvo el sistema operativo ejecutandoce
+os.userInfo() informacion del usuario
+
+MODULO TIMERS
+temporizador  ejecutan funciones que ejecutan codigo luego de un cierto periodo de tiempo
+
+setTimeOut() ejecuta codigo luego de un numero especifico de milisegundos 1 segundo es 1000
+
+
+setImmediate() ejecuta codigo asincrono en la proxima iteracion del ciclo de eventos (lo mas pronto posible)
+se ejecuta desp del codigo sincrono
+
+
+setInterval() para ejecutar codigo un numero infitio de veces con un retraso especifico de milisegundos
+
+
+
+setTimeOut(funcion, retraso, argumento1, argumento2);
+funcion mostrarTema(tema){
+console.log("aprendiendo ${tema}")
+}
+setTimeOut(mostrarTema, 1000, "nodejs")
+
+higher-order programming
+
+
+setImmediate(funcion,argumento1,argumento2)
+
+setInterval(function, intervalo, arg1, arg2)
+
+
+MODULO FS 
+
+fs file system  sistema de archivos
+modulo que contiene funcionalidad muy util para trabajar con el sistema de archivos
+ARCHIVO PODEMOS:
+.leer
+.modificar
+.copiar
+.eliminar
+.cambiar nombre 
+todos sus metodos son asincronos por defecto
+si lo que queremos es que se ejecute de forma sincrona agregamos el Syncs asus nombres
+ejemplo fs.rename()        fs.renameSync()
+
+
+const fs = require("fs")
+
+fs.readFile('index.html','utf-8', (err,contenido)=>{
+if(err){
+console.log(err)    //o throw err; para q se detanga la ejecucion
+}
+else{ console.log(contenido)
+}
+
+})
+
+fs.rename('index.html','main.html', (err)=>{
+if(err){
+console.log(err)    //o throw err; para q se detanga la ejecucion
+}
+else{ console.log("nombre cambiado exitosamente")
+}
+
+})
+
+
+//agregar contenido al final de un archivo
+
+fs.appendFile("index.html", "<p>hola<p>", (err)=>{
+if(err)throw err;
+console.log("archivo actualizado")
+})
+
+
+//remplazar todo el contenido del archivo
+
+fs.writeFile("index.html","contenido nuevo",(err)=>{
+if(err)throw err
+console.log("remplazado")
+
+})
+
+
+//eliminar
+
+fs.unlink("index.html",(err)=>{
+if(err)throw err
+console.log("eliminado")
+
+})

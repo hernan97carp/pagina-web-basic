@@ -1,0 +1,75 @@
+npm 
+
+es el archivo de software mas grande del mundo que contiene paquetes
+que puedes instalar y usar nodejs
+paquete
+archivo directorio descrito por un packjson
+
+modulo
+cualquier archivo o directorio en el directorio node modules que puede ser importado con require()
+
+
+dependencias: paquetes cuya funcionalidades dependen de otros paquetes
+npm init        entrypoint(paquete q se va aimportar ej index.js)
+npm init -y
+npm init --yes
+npm install  
+
+json
+formato de texto usado para almacenar y transportar informacion
+esta basado en la sintaxis de javascript
+
+el servidor recibe y responde en json
+par clave-valor      { "titulo":"aprende node.json"   }
+json { js }
+js {json}
+
+
+
+//objeto a cadena de caracteres
+//cadena de caracteres en formato json 
+let infoCurso= {
+"titulo" = "node",
+"num" = 4
+}
+let infocursoJson = JSON.stringify(infocurso)
+console.log(infocursoJson)
+//resultado es string   
+
+
+//cadena de caracteres  a objeto
+
+let infocursObjeto =JSON.parse(infocursojson)
+console.log(let infocursObjeto) 
+ahora es un objeto puedo acceder a sus propiedades o metodos
+
+
+instalar paquetes npm y desintalar
+    npm install express
+ej npm unistall express
+npm install express@4.15.1   version que quieres
+
+devDependecies  
+
+npm install express --save-dev
+guardar como desarollo para la aplicacion
+
+package-lock.json
+
+se genera automaticamente cuando npm modifica el arbol de node_modules o package.json
+describe el arbol generado para que futuras instalaciones puedan generar exactamente el mismo arbol
+asi otros desarralladores instalan las mismas dependencias que instalaste
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
